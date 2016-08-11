@@ -23,4 +23,9 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function user_levels()
+    {
+        return $this->belongsToMany(UserLevel::class, 'user_level_user');
+    }
 }
