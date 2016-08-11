@@ -13,6 +13,7 @@ class Product extends Model
     	'long_description', 
     	'price', 
     	'discount', 
-    	'discounted_price'
+    	'discounted_price',
+    	'featured_image'
     ];
 }

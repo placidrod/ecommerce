@@ -36,6 +36,15 @@
 					<label for="discounted_price">Discounted Price</label>
 					<input type="text" class="form-control" id="discounted_price" name="discounted_price" value="{{ old('discounted_price') }}">
 				</div>
+				<div class="input-group">
+					<span class="input-group-btn">
+						<a id="lfm" data-input="thumbnail" data-preview="holder" class="btn btn-primary">
+							<i class="fa fa-picture-o"></i> Choose
+						</a>
+					</span>
+					<input id="thumbnail" class="form-control" type="text" name="featured_image">
+				</div>
+				<img id="holder" style="margin-top:15px;max-height:100px;">
 				<div class="form-group">
 					<button type="submit" class="btn btn-primary">Submit</button>
 				</div>

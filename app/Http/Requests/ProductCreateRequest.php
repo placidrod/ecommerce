@@ -25,8 +25,6 @@ class ProductCreateRequest extends Request
     {
         return [
             'title' => 'required', 
-            'short_description', 
-            'long_description', 
             'price' =>'required|numeric', 
             'discount' => 'numeric', 
             'discounted_price' => 'numeric'

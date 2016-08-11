@@ -44,6 +44,8 @@ class ProductController extends Controller
      */
     public function store(ProductCreateRequest $request)
     {
+        // return $request->all();
+
         $this->product->createProduct($request->all());
 
         return redirect('products');
